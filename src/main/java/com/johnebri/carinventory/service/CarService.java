@@ -1,6 +1,7 @@
 package com.johnebri.carinventory.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,10 @@ public class CarService {
 	
 	public List<Car> getMyCars() {
 		return carRepo.findAll(); 
+	}
+	
+	public Optional<Car> getCar(int id) {
+		return carRepo.findById(id);
 	}
 
 }

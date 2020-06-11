@@ -28,7 +28,7 @@
 								<td>${mycar.carModel}</td>
 								<td>${mycar.carColour}</td>
 								<td><fmt:formatDate value="${mycar.dateTimeCreated}" pattern="dd/MM/yyyy" /></td>
-								<td><a type="button" class="btn btn-success" href="/update-todo?id=${mycar.id}">Edit</a></td>
+								<td><a type="button" class="btn btn-success" href="/editcar?id=${mycar.id}">Edit</a></td>
 								<td><a type="button" class="btn btn-warning" href="/delete-todo?id=${mycar.id}">Delete</a></td>
 							</tr>
 						</c:forEach>
