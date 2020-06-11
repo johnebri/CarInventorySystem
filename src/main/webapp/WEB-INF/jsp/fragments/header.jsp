@@ -18,8 +18,8 @@
 				      <a class="navbar-brand" href="#">Jay's Car Inventory System</a>
 				    </div>
 				    <ul class="nav navbar-nav">
-				    	<li><a href="#">Dashboard</a></li>
-				      <li class="active"><a href="#">My Cars</a></li>
+				    	<li><a href="/">Dashboard</a></li>
+				      <li class="active"><a href="${contextPath}/mycars">My Cars</a></li>
 				      <li><a href="${contextPath}/newcar">New Car</a></li>
 				    </ul>
 				    <ul class="nav navbar-nav navbar-right">

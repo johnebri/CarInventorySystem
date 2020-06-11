@@ -1,5 +1,7 @@
 package com.johnebri.carinventory.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -23,8 +25,16 @@ public class CarController {
 	}
 	
 	@PostMapping("/newcar")
-	public String addNewCar(ModelMap model,Car car, BindingResult result) {
-		return carSvc.newCar(car);
+	public String addNewCar(ModelMap model, Car car, BindingResult result) {
+		carSvc.newCar(car);
+		return "redirect:/mycars";
+	}
+	
+	@GetMapping("/mycars")
+	public String myCars(ModelMap model) {
+		List<Car> cars = carSvc.getMyCars();
+		model.put("mycars", cars);
+		return "mycars";
 	}
 
 }
