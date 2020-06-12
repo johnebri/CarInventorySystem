@@ -15,9 +15,8 @@ public class CarService {
 	@Autowired
 	private CarRepository carRepo;
 	
-	public String newCar(Car car) {
-		carRepo.save(car);
-		return null;
+	public Car newCar(Car car) {
+		return carRepo.save(car);
 	}
 	
 	public List<Car> getMyCars() {
@@ -28,15 +27,12 @@ public class CarService {
 		return carRepo.getCarById(id);
 	}
 
-	public String editCar(Car car ) {
-		System.out.println(car.getDateTimeCreated());
-		carRepo.save(car);
-		return null;
+	public Car editCar(Car car ) {
+		return carRepo.save(car);
 	}
 	
-	public String deleteCar(int id) {
+	public void deleteCar(int id) {
 		carRepo.deleteById(id);
-		return null;
 	}
 
 }
