@@ -8,19 +8,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter
 {
-
-//	@Override
-//	protected void configure(HttpSecurity http) throws Exception {
-//	
-//			http
-//		  .authorizeRequests()
-//		      .antMatchers("/login").permitAll() 
-//		      .anyRequest().authenticated()
-//		      .and()
-//		  .logout()                                    
-//		      .permitAll();
-//			
-//	}
 	
 	@Autowired
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
