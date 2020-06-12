@@ -24,8 +24,19 @@ public class CarService {
 		return carRepo.findAll(); 
 	}
 	
-	public Optional<Car> getCar(int id) {
-		return carRepo.findById(id);
+	public Car getCar(int id) {
+		return carRepo.getCarById(id);
+	}
+
+	public String editCar(Car car ) {
+		System.out.println(car.getDateTimeCreated());
+		carRepo.save(car);
+		return null;
+	}
+	
+	public String deleteCar(int id) {
+		carRepo.deleteById(id);
+		return null;
 	}
 
 }

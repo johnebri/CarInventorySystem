@@ -1,5 +1,6 @@
 package com.johnebri.carinventory.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,7 +30,7 @@ public class CarController {
 	@PostMapping("/newcar")
 	public String addNewCar(ModelMap model, Car car, BindingResult result) {
 		carSvc.newCar(car);
-		return "redirect:/mycars";
+		return "redirect:/mycars?added=yes";
 	}
 	
 	@GetMapping("/mycars")
@@ -41,15 +42,30 @@ public class CarController {
 	
 	@GetMapping("/editcar")
 	public String editCar(@RequestParam int id, ModelMap model) {
-		Optional<Car> car = carSvc.getCar(id);
+		Car car = carSvc.getCar(id);
+		
 		model.put("car", car);
+		model.put("carColour", car.getCarColour());
 		return "newcar";
 	}
 	
 	@PostMapping("/editcar")
-	public String editCarAction() {
-		
-		return "";
+	public String editCarAction(ModelMap model, Car car, BindingResult result) {
+		carSvc.editCar(car);
+		return "redirect:/mycars?edited=yes";
+	}
+	
+	@GetMapping("/deletecar")
+	public String deleteCar(@RequestParam int id, ModelMap model) {
+		Car car = carSvc.getCar(id);
+		model.put("car", car);
+		return "confirm-delete";
+	}
+	
+	@GetMapping("/confirmDelete")
+	public String confirmDelete(@RequestParam int id) {
+		carSvc.deleteCar(id);
+		return "redirect:/mycars?deleted=yes";
 	}
 	
 	
