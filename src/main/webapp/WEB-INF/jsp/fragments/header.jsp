@@ -29,7 +29,7 @@
 			        <li><a href="${contextPath}/newcar">New Car</a></li>
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="${contextPath}/logout"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			        <li><a href="${contextPath}/logout"><span class="glyphicon glyphicon-user"></span> Log Out</a></li>
 			      </ul>
 			    </div>
 			  </div>
