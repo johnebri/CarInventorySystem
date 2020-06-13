@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/johnebri/CarInventorySystem.svg?branch=master)](https://travis-ci.org/johnebri/CarInventorySystem)
 [![Coverage Status](https://coveralls.io/repos/github/johnebri/FoodVendorApp/badge.svg?branch=master)](https://coveralls.io/github/johnebri/FoodVendorApp?branch=master)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
-[![Build Status](https://travis-ci.org/johnebri/CarInventorySystem.svg?branch=master)](https://travis-ci.org/johnebri/CarInventorySystem)
 
 
 ## Running the application online
