@@ -1,9 +1,6 @@
 # Car Inventory System
 
-[![Build Status](https://travis-ci.org/johnebri/CarInventorySystem.svg?branch=master)](https://travis-ci.org/johnebri/CarInventorySystem)
-[![Coverage Status](https://coveralls.io/repos/github/johnebri/FoodVendorApp/badge.svg?branch=master)](https://coveralls.io/github/johnebri/FoodVendorApp?branch=master)
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
-
+A car inventory system, where an end-user(client) can add, edit, and delete a car from an interface(a web browser). Tools used: Java - spring boot and Postgres db, spring security.
 
 ## Running the application online
 The application is hosted on https://jcar-inventory-system.herokuapp.com/
