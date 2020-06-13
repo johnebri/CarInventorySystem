@@ -12,4 +12,5 @@ The application is hosted on https://jcar-inventory-system.herokuapp.com/
  - password: 111111
 
 
+## Unit Test Cases
 ![Unit Test Cases](https://res.cloudinary.com/dxi6ee9zf/image/upload/v1592009615/tests_c2jgge.jpg)
